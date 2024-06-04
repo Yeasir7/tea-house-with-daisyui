@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea house</title>
+
     <!-- tailwind and daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+
     <!-- manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +27,8 @@
           },
         backgroundImage: {
             'costom-gradient': 'linear-gradient(180deg, #F4F4F4 0%, rgba(244, 244, 244, 0.00) 100%)',
+            'costom-gradient-2': 'linear-gradient(270deg, #F00 0%, #FF8938 100%)',
+            'costom-gradient-3': 'linear-gradient(90deg, #D9D9D9 0%, rgba(255, 255, 255, 0.00) 100%)',
         }
         }
       }
@@ -39,9 +43,9 @@
   </style>
 
 </head>
-<body class="font-manrope">
+<body class="font-manrope bg-white">
     <header class="container mx-auto">
-            <div class="hero bg-[#FFF] ">
+            <div class="hero bg-white">
                 <div class="hero-content flex-col lg:flex-row">
                   <div class="lg:w-1/2">
                     <h1 class="text-6xl  md:text-7xl font-extrabold text-black">It's good <br>
@@ -105,6 +109,28 @@
                 </div>
             </div>
         </section>
+        <!-- grat tea -->
+        <section class="flex flex-col lg:flex-row gap-8">
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 flex-1">
+                <div class="h-32 bg-costom-gradient-2 rounded-lg opacity-10"></div>
+                <div class="row-span-2 bg-[#E6A6231A] rounded-lg flex justify-center"> 
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="row-span-2 bg-[#5776391A] rounded-lg flex justify-center"> 
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="h-32 bg-costom-gradient-3 rounded-lg"></div>
+            </div>
+            <div class="text-black space-y-5 flex-1">
+                <h1 class="text-5xl font-extrabold">Great Tea, Freshly <br>Presented</h1>
+                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h3 class="text-xl font-extrabold">Unique Taste</h3>
+                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h3 class="text-xl font-extrabold">Premium Quality</h3>
+                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+            </div>
+        </section>
+        <section class="my-24"></section>
     </main>
     <footer></footer>
 </body>
