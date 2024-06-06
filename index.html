@@ -29,6 +29,7 @@
             'costom-gradient': 'linear-gradient(180deg, #F4F4F4 0%, rgba(244, 244, 244, 0.00) 100%)',
             'costom-gradient-2': 'linear-gradient(270deg, #F00 0%, #FF8938 100%)',
             'costom-gradient-3': 'linear-gradient(90deg, #D9D9D9 0%, rgba(255, 255, 255, 0.00) 100%)',
+            'costom-gradient-4': 'linear-gradient(270deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 137, 56, 0.10) 100%)',
         }
         }
       }
@@ -182,7 +183,7 @@
           <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- card 1 -->
             <div class="card card-compact bg-base-100 shadow-xl">
-              <figure><img src="images/news-1.png" alt="Shoes" /></figure>
+              <img class="p-4" src="images/news-1.png" alt="Shoes" >
               <div class="card-body space-y-2">
                 <p class="font-medium text-[#777] text-left">Feb 05, 2027</p>
                 <h2 class="text-sm font-extrabold text-left">Collecting 8 points for <br> discount</h2>
@@ -192,7 +193,8 @@
             </div> 
             <!-- card 2 -->
             <div class="card card-compact bg-base-100 shadow-xl">
-              <figure><img src="images/news-2.png" alt="Shoes" /></figure>
+              
+              <img class="p-4" src="images/news-2.png" alt="Shoes" />
               <div class="card-body space-y-2">
                 <p class="font-medium text-[#777] text-left">Feb 05, 2027</p>
                 <h2 class="text-sm font-extrabold text-left">Collecting 8 points for <br> discount</h2>
@@ -202,7 +204,7 @@
             </div>
             <!-- card 3 -->
             <div class="card card-compact bg-base-100 shadow-xl">
-              <figure><img src="images/news-3.png" alt="Shoes" /></figure>
+              <img class="p-4" src="images/news-3.png" alt="Shoes" />
               <div class="card-body space-y-2">
                 <p class="font-medium text-[#777] text-left">Feb 05, 2027</p>
                 <h2 class="text-sm font-extrabold text-left">Collecting 8 points for <br> discount</h2>
@@ -213,6 +215,54 @@
           </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="lg:px-52 lg:py-28 bg-costom-gradient-4">
+      <div class="mb-24 flex flex-col lg:flex-row justify-between">
+        <img src="images/cup.png" alt="">
+        <div class="flex items-center gap-10">
+          <p>Ready to get Started?</p>
+          <button class="btn btn-primary">Get Stated</button>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-between gap-8 text-base-content">
+        <nav class="flex flex-col">
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav class="flex flex-col">
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav class="flex flex-col">
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <h6 class="footer-title">
+            Subscribe to our
+            <br>
+            Newsletter
+          </h6> 
+          <fieldset class="form-control w-80">
+            <div class="join">
+              <input type="text" placeholder="Enter Address" class="pr-14 bg-transparent border-b-2 border-black" /> 
+              <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] rounded-full text-white">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="text-center mt-12">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+    </div>
+    </footer>
 </body>
 </html>
